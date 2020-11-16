@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!
+{% endblock %}
+
+{% block body %}
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="card">
+					<img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">{{posts.title}}</h5>
+						<p class="card-text">{{posts.content}}</p>
+						<p>
+							adresse : {{posts.address}}</p>
+						<p>
+							code postal : {{posts.postalcode}}</p>
+						<p>
+							ville : {{posts.ville}}</p>
+						<p>auteur : {{posts.author}}
+							-
+							crée le : {{posts.createdAt |date("d/m/Y")}}</p>
+						<p>
+							mis à jour le : {{posts.majDate |date('d/m/Y')}}</p>
+						<p>
+							fin de mission le : {{posts.endMission |date('d/m/Y')}}</p>
+						<p>
+							contrat : {{posts.contrat}}</p>
+						<p>
+							type de contrat : {{posts.typeContrat}}</p>
+
+						<a href="/posts/{{posts.id}}" class="btn btn-primary">Go somewhere</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+{% endblock %}
