@@ -6212,17 +6212,17 @@
     },
     {
         "name": "symfony/security-bundle",
-        "version": "v5.1.8",
-        "version_normalized": "5.1.8.0",
+        "version": "v5.1.9",
+        "version_normalized": "5.1.9.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/security-bundle.git",
-            "reference": "8921cdb1057f615b8340a352195f4a684c876893"
+            "reference": "1060810a1dc7361304c50d4aa2569fe5b4da60c6"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/security-bundle/zipball/8921cdb1057f615b8340a352195f4a684c876893",
-            "reference": "8921cdb1057f615b8340a352195f4a684c876893",
+            "url": "https://api.github.com/repos/symfony/security-bundle/zipball/1060810a1dc7361304c50d4aa2569fe5b4da60c6",
+            "reference": "1060810a1dc7361304c50d4aa2569fe5b4da60c6",
             "shasum": ""
         },
         "require": {
@@ -6264,7 +6264,7 @@
             "symfony/yaml": "^4.4|^5.0",
             "twig/twig": "^2.10|^3.0"
         },
-        "time": "2020-10-24T12:01:57+00:00",
+        "time": "2020-11-01T15:43:26+00:00",
         "type": "symfony-bundle",
         "installation-source": "dist",
         "autoload": {
