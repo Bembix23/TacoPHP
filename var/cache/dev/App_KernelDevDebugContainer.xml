@@ -5391,6 +5391,7 @@
       </argument>
     </service>
     <service id=".service_locator.IFW.IA7" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+<<<<<<< HEAD
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="em" type="service" id="doctrine.orm.default_entity_manager"/>
@@ -5403,6 +5404,14 @@
       </argument>
     </service>
     <service id=".service_locator.wOEozjY" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+=======
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="em" type="service" id="doctrine.orm.default_entity_manager"/>
+      </argument>
+    </service>
+    <service id=".service_locator.bDjYIMj" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+>>>>>>> 35a66de2d33d2e368058b1576e01facd355ddc88
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="App\Controller\HomeController::create" type="service" id=".service_locator.IFW.IA7"/>
@@ -5884,12 +5893,20 @@
       <argument type="service" id="security.token_storage"/>
     </service>
     <service id="debug.argument_resolver.service.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver" public="false">
+<<<<<<< HEAD
       <argument type="service" id=".service_locator.wOEozjY"/>
+=======
+      <argument type="service" id=".service_locator.bDjYIMj"/>
+>>>>>>> 35a66de2d33d2e368058b1576e01facd355ddc88
     </service>
     <service id="debug.argument_resolver.default.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver" public="false"/>
     <service id="debug.argument_resolver.variadic.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\VariadicValueResolver" public="false"/>
     <service id="debug.argument_resolver.not_tagged_controller.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\NotTaggedControllerValueResolver" public="false">
+<<<<<<< HEAD
       <argument type="service" id=".service_locator.wOEozjY"/>
+=======
+      <argument type="service" id=".service_locator.bDjYIMj"/>
+>>>>>>> 35a66de2d33d2e368058b1576e01facd355ddc88
     </service>
     <service id=".debug.http_client.inner" class="Symfony\Contracts\HttpClient\HttpClientInterface" public="false">
       <argument type="collection"/>
@@ -6302,7 +6319,11 @@
     <service id="Symfony\WebpackEncoreBundle\Asset\EntrypointLookupInterface" alias="webpack_encore.entrypoint_lookup[_default]"/>
     <service id="container.env_var_processors_locator" alias=".service_locator.WaGDpDt" public="true"/>
     <service id="twig.loader.filesystem" alias="twig.loader.native_filesystem" public="false"/>
+<<<<<<< HEAD
     <service id="argument_resolver.controller_locator" alias=".service_locator.wOEozjY"/>
+=======
+    <service id="argument_resolver.controller_locator" alias=".service_locator.bDjYIMj"/>
+>>>>>>> 35a66de2d33d2e368058b1576e01facd355ddc88
     <service id="twig.loader" alias="twig.loader.native_filesystem"/>
     <service id="Psr\Log\LoggerInterface $requestLogger" alias="monolog.logger.request"/>
     <service id="Psr\Log\LoggerInterface $consoleLogger" alias="monolog.logger.console"/>

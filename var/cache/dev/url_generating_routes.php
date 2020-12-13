@@ -18,6 +18,9 @@ return [
     'home' => [[], ['_controller' => 'App\\Controller\\HomeController::index'], [], [['text', '/home']], [], []],
     'show_post' => [['id'], ['_controller' => 'App\\Controller\\HomeController::show'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/posts']], [], []],
     'articles.add' => [[], ['_controller' => 'App\\Controller\\HomeController::create'], [], [['text', '/add']], [], []],
+<<<<<<< HEAD
     'app_login' => [[], ['_controller' => 'App\\Controller\\SecurityController::login'], [], [['text', '/login']], [], []],
     'app_logout' => [[], ['_controller' => 'App\\Controller\\SecurityController::logout'], [], [['text', '/logout']], [], []],
+=======
+>>>>>>> 35a66de2d33d2e368058b1576e01facd355ddc88
 ];
