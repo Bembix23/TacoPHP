@@ -3,16 +3,20 @@
 {% block title %}Hello HomeController!
 {% endblock %}
 
+
+
 {% block body %}
 	<a href="/add" class="btn btn-primary">GO Créer une offre</a>
 	<div class="container">
-	<a href="/register"> S'inscrire</a>
-	<a href="/login"> Se connecter</a>
-	{% if app.user %}
-		<a href="/post"> Modifier/Supprimer des offres</a>
-	{% else %}
-		Veuillez vous connecter pour modifier ou supprimer des offres
-	{% endif %}
+		<div class="head">
+			<a class="link" href="/register"> S'inscrire</a>
+			<a class="link" href="/login"> Se connecter</a>
+			{% if app.user %}
+				<a href="/post"> Modifier/Supprimer des offres</a>
+			{% else %}
+				Veuillez vous connecter pour modifier ou supprimer des offres
+			{% endif %}
+		</div>
 
 
 	

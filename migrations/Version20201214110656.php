@@ -10,7 +10,7 @@ use Doctrine\Migrations\AbstractMigration;
 /**
  * Auto-generated Migration: Please modify to your needs!
  */
-final class Version20201116083901 extends AbstractMigration
+final class Version20201214110656 extends AbstractMigration
 {
     public function getDescription() : string
     {
@@ -23,6 +23,7 @@ final class Version20201116083901 extends AbstractMigration
         $this->addSql('CREATE TABLE contrat (id INT AUTO_INCREMENT NOT NULL, contract VARCHAR(255) NOT NULL, PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8mb4 COLLATE `utf8mb4_unicode_ci` ENGINE = InnoDB');
         $this->addSql('CREATE TABLE post (id INT AUTO_INCREMENT NOT NULL, title VARCHAR(255) NOT NULL, content LONGTEXT NOT NULL, author VARCHAR(255) NOT NULL, created_at DATETIME NOT NULL, address VARCHAR(255) NOT NULL, postal_code VARCHAR(255) NOT NULL, ville VARCHAR(255) NOT NULL, maj_date DATETIME NOT NULL, end_mission DATETIME NOT NULL, contrat VARCHAR(255) NOT NULL, type_contrat VARCHAR(255) NOT NULL, PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8mb4 COLLATE `utf8mb4_unicode_ci` ENGINE = InnoDB');
         $this->addSql('CREATE TABLE type_de_contrat (id INT AUTO_INCREMENT NOT NULL, type VARCHAR(255) NOT NULL, PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8mb4 COLLATE `utf8mb4_unicode_ci` ENGINE = InnoDB');
+        $this->addSql('CREATE TABLE users (id INT AUTO_INCREMENT NOT NULL, email VARCHAR(180) NOT NULL, roles LONGTEXT NOT NULL COMMENT \'(DC2Type:json)\', password VARCHAR(255) NOT NULL, UNIQUE INDEX UNIQ_1483A5E9E7927C74 (email), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8mb4 COLLATE `utf8mb4_unicode_ci` ENGINE = InnoDB');
     }
 
     public function down(Schema $schema) : void
@@ -31,5 +32,6 @@ final class Version20201116083901 extends AbstractMigration
         $this->addSql('DROP TABLE contrat');
         $this->addSql('DROP TABLE post');
         $this->addSql('DROP TABLE type_de_contrat');
+        $this->addSql('DROP TABLE users');
     }
 }
