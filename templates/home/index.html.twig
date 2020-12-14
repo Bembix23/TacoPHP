@@ -8,6 +8,12 @@
 	<div class="container">
 	<a href="/register"> S'inscrire</a>
 	<a href="/login"> Se connecter</a>
+	{% if app.user %}
+		<a href="/post"> Modifier/Supprimer des offres</a>
+	{% else %}
+		Veuillez vous connecter pour modifier ou supprimer des offres
+	{% endif %}
+
 
 	
 		<div class="row">
